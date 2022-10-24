@@ -1,0 +1,22 @@
+@import './utils/variables';
+@import './utils/placeholders';
+
+@import './base/reset';
+@import './base/base';
+
+@import './components/buttons';
+@import './components/logo';
+@import './components/nav';
+@import './components/social';
+@import './components/modal';
+@import './components/mobile-menu';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/work';
+@import './layouts/about';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/portfolio';
+

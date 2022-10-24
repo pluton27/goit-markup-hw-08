@@ -1,0 +1,110 @@
+.btn {
+  @extend %flex-centered;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn--main-btn {
+  font-weight: 700;
+  line-height: 1.9;
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  transition: background-color $main-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $darker-accent-color;
+  }
+}
+
+.btn--centered {
+  margin: 0 auto;
+}
+
+.hero__btn {
+  @media screen and (max-width: 1199px) {
+    padding: 10px 24px;
+  }
+}
+
+.portfolio__btn {
+  font-weight: 500;
+  line-height: 1.6;
+  background-color: $light-background;
+  padding: 6px 22px;
+  transition: background-color $main-transition, color $main-transition,
+    box-shadow $main-transition;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &.mixitup-control-active {
+    color: $white-color;
+    background-color: $accent-color;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-color: $white-color;
+  fill: $black-color;
+  padding: 0;
+  cursor: pointer;
+  transition: fill $main-transition;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    outline: none;
+  }
+}
+
+.modal__close-btn {
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  border: 1px solid $weaker-black-color;
+}
+
+.modal__submit-btn {
+  padding: 10px 52px;
+}
+
+.menu-toggle {
+  min-width: 40px;
+  min-height: 40px;
+  @extend %flex-centered;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

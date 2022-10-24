@@ -1,0 +1,30 @@
+.work {
+    display: none;
+    padding-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
+.work__list {
+    display: flex;
+    gap: 30px;
+}
+
+.work__item {
+    position: relative;
+}
+
+.work__title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white-color;
+    background: $transparent-grey-background;
+}

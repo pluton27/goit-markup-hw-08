@@ -71,6 +71,9 @@
 
   &[href^='tel'] {
     color: $accent-color;
+    @media screen and (max-width: 360px) {
+      font-size: 32px;
+    }
     font-size: 34px;
     line-height: 1.17;
     margin-bottom: 32px;

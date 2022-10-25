@@ -641,6 +641,7 @@ body {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+  margin-bottom: 32vh;
 }
 .mob__nav-item:not(:last-child) {
   margin-bottom: 32px;
@@ -659,7 +660,7 @@ body {
 }
 
 .mob__contact-link {
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   display: block;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -668,18 +669,16 @@ body {
 .mob__contact-link:hover, .mob__contact-link:focus {
   color: #2196f3;
 }
-.mob__contact-link[href^=mailto] {
+.mob__contact-link[href^=tel] {
   color: #2196f3;
+  font-size: 34px;
+  line-height: 1.17;
   margin-bottom: 32px;
 }
 @media screen and (max-width: 360px) {
   .mob__contact-link[href^=mailto] {
     font-size: 24px;
   }
-}
-.mob__contact-link[href^=tel] {
-  font-size: 24px;
-  line-height: 1.17;
 }
 
 .mob__social {
